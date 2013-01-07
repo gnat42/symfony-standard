@@ -11,6 +11,10 @@ _demo:
     type:     annotation
     prefix:   /demo
 
+_form:
+    resource: "@AcmeDemoBundle/Controller/FormController.php"
+    type:     annotation
+
 _wdt:
     resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
     prefix:   /_wdt
