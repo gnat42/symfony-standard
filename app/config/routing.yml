@@ -1,0 +1,4 @@
+ns_demo:
+    resource: "@NSDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+

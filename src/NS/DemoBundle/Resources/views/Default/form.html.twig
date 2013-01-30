@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{%block body %}
+<form action="{{ path('ns_demo_form',{"id":id}) }}" method="POST" />
+
+{{ form_rest(form) }}
+
+<button type="submit">Save</button>
+
+</form>
+{%endblock %}

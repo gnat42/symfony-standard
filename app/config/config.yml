@@ -45,6 +45,8 @@ doctrine:
         user:     %database_user%
         password: %database_password%
         charset:  UTF8
+        types:
+          IntegerChoice: NS\DemoBundle\Entity\IntegerChoice
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: %kernel.root_dir%/data/data.db3
         # path:     %database_path%
@@ -60,3 +62,7 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+ns_demo:
+  class: "NS\DemoBundle\Service\SecondDemo"
+  something: This is Something

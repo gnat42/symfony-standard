@@ -1,0 +1,6 @@
+ns_demo_homepage:
+    pattern:  /service_demo
+    defaults: { _controller: NSDemoBundle:Default:index }
+ns_demo_form:
+    pattern:  /formdemo/{id}
+    defaults: { _controller: NSDemoBundle:Default:form , id: null}

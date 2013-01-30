@@ -1,0 +1,11 @@
+parameters:
+
+services:
+  ns_demo.form.integer_type:
+    class: 'NS\DemoBundle\Form\Types\IntegerChoice'
+    tags:
+      - { name: form.type, alias: integer_choice }
+  ns_demo.example:
+    class: "%ns_demo.example.class%"
+    calls:
+      - [ setSomething, [ "%ns_demo.something%" ] ]
