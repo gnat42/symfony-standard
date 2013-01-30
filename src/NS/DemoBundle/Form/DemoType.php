@@ -11,7 +11,7 @@ class DemoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('integer_choice','integer_choice',array('empty_value'=>'Please Select...'))
+            ->add('integer_choice','integer_choice')
             ;
     }
 

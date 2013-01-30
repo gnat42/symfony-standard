@@ -3,7 +3,7 @@
 namespace NS\DemoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use NS\DemoBundle\Entity\IntegerChoice;
+
 /**
  *
  * @author gnat
@@ -20,7 +20,7 @@ class Demo
     private $id;
 
     /**
-     * @ORM\Column(name="integer_choice",type="integer")
+     * @ORM\Column(name="integer_choice",type="IntegerChoice")
      */
     private $integer_choice;
     
@@ -53,7 +53,7 @@ class Demo
      * @param integer $integerChoice
      * @return Demo
      */
-    public function setIntegerChoice($integerChoice)
+    public function setIntegerChoice(\NS\DemoBundle\Form\Types\IntegerChoice $integerChoice)
     {
         $this->integer_choice = $integerChoice;
     
